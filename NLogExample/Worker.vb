@@ -4,11 +4,7 @@ Imports NLog
 
 Public Class Worker
 
-    Private Shared Log As ILogger
-
-    Shared Sub New()
-        Log = LogManager.GetCurrentClassLogger()
-    End Sub
+    Private Shared Log As ILogger = LogManager.GetCurrentClassLogger()
 
     Public Sub Method1()
         Log.Debug("StartMethod1")
